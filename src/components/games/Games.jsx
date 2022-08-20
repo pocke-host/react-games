@@ -82,7 +82,7 @@ const Games = () => {
   };
 
   useEffect(() => {
-    console.log("firing useEffect on getFriends");
+    console.log("firing useEffect on getGames");
 
     gamesService
       .paginateGame(currentPage, gameData.pageSize)
