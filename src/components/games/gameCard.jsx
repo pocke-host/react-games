@@ -14,7 +14,7 @@ const Game = (props) => {
 
   const onEditGameClicked = (e) => {
     e.preventDefault();
-    const stateForTransports = { type: "FRIEND_VIEW", payload: aGame };
+    const stateForTransports = { type: "GAME_VIEW", payload: aGame };
     navigate(`/Games/GameForm/${aGame}`, {
       state: stateForTransports,
     });
